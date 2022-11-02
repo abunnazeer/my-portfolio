@@ -1,10 +1,20 @@
+:root {
+  --green: #00a85a;
+  --white: #fff;
+  --pupple: #3f3f95;
+  --puppleLight: #5454aa;
+}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
 }
 .header-container {
-  background-color: #ffffff;
-  border-bottom: #00a85a 0.2rem solid;
+  background-color: var(--white);
+  border-bottom: var(--green) 0.2rem solid;
 }
 .header {
   display: flex;
@@ -18,7 +28,6 @@
 }
 
 .menu {
-  padding: 20px;
   margin: auto;
 }
 .links li {
@@ -28,13 +37,23 @@
 }
 .links a {
   text-decoration: none;
+  color: #000;
+}
+.links a:hover {
+  color: var(--puppleLight);
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid var(--puppleLight);
 }
 .lets-talk {
-  background-color: #3f3f95;
-  border-radius: 5px;
+  background-color: var(--pupple);
+  border-radius: 0.5rem;
   margin: auto 0;
-  width: 10rem;
+  width: 8rem;
   height: 2.5rem;
   border: 0px;
-  color: #ffffff;
+  color: var(--white);
+  font-weight: bold;
+}
+.lets-talk:hover {
+  background-color: var(--puppleLight);
 }

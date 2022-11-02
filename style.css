@@ -30,7 +30,11 @@
   text-decoration: none;
 }
 .lets-talk {
+  background-color: #3f3f95;
+  border-radius: 5px;
   margin: auto 0;
   width: 10rem;
   height: 2.5rem;
+  border: 0px;
+  color: #ffffff;
 }

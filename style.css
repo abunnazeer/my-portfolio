@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header-container {
+  background-color: #ffffff;
+  border-bottom: #00a85a 0.2rem solid;
+}
+.header {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.brand img {
+  margin: 0.2rem;
+  width: 14rem;
+  height: 4rem;
+}
+
+.menu {
+  padding: 20px;
+  margin: auto;
+}
+.links li {
+  display: inline;
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+.links a {
+  text-decoration: none;
+}
+.lets-talk {
+  margin: auto 0;
+  width: 10rem;
+  height: 2.5rem;
+}

@@ -3,6 +3,15 @@
   --white: #fff;
   --pupple: #3f3f95;
   --puppleLight: #5454aa;
+  --lightGrey: #e5e5e5;
+  --youtube: {
+    position: absolute;
+    right: 0;
+    background-color: #5454aa;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 1rem;
+  }
 }
 * {
   margin: 0;
@@ -12,6 +21,7 @@
 body {
   font-family: sans-serif;
 }
+/* header section start*/
 .header-container {
   background-color: var(--white);
   border-bottom: var(--green) 0.2rem solid;
@@ -57,3 +67,80 @@ body {
 .lets-talk:hover {
   background-color: var(--puppleLight);
 }
+/* header end */
+
+/* banner start */
+.banner-section {
+  margin: auto;
+  background-color: var(--lightGrey);
+  height: 30rem;
+  padding: 1rem 0;
+}
+.banner {
+  position: relative;
+  width: 95%;
+  margin: auto;
+}
+/* social card */
+
+.social-card {
+  position: absolute;
+  right: 0;
+  width: 16rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+  padding: 10px;
+}
+.icon-text h2 {
+  position: absolute;
+  margin-left: 0.5rem;
+  display: inline;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.social-card p {
+  color: #e5e5e5;
+  margin-top: 0.5rem;
+}
+
+.youtube {
+  background-color: #433f4e;
+}
+.github {
+  position: absolute;
+  top: 6rem;
+  background-color: #563040;
+}
+.handle {
+  position: absolute;
+  top: 12rem;
+  background-color: #241920;
+}
+
+.handle button {
+  width: 4.7rem;
+  height: 1.5rem;
+  margin-top: 0.3rem;
+}
+.news-letter {
+  position: absolute;
+  top: 18rem;
+  background-color: #241920;
+  height: 6rem;
+}
+
+.news-letter input[type='email' i] {
+  width: 10rem;
+  min-height: 1.5rem;
+  margin-top: 0.8rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1rem solid #e5e5e54d;
+}
+.news-letter button {
+  width: 4.3rem;
+  height: 1.5rem;
+}
+/* banner end */

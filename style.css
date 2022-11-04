@@ -18,14 +18,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: myFont;
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
 body {
   font-family: sans-serif;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
 }
 /* header section start*/
 .header-container {
   background-color: var(--white);
   border-bottom: var(--green) 0.2rem solid;
 }
+
 .header {
   display: flex;
   margin: auto;
@@ -81,23 +91,47 @@ body {
   width: 95%;
   margin: auto;
 }
+/* introduction */
+.intro {
+  position: absolute;
+  top: 8rem;
+  left: 2rem;
+}
+.title {
+  font-family: myFont;
+  font-size: 3rem;
+}
+.subtitle {
+  color: #272222;
+  width: 20rem;
+  line-height: 2.5rem;
+}
+.project,
+.hire-me {
+  width: 7rem;
+  height: 2rem;
+}
+.project {
+  background-color: #000;
+  color: #fff;
+}
 /* social card */
-
 .social-card {
   position: absolute;
   right: 0;
   width: 16rem;
   height: 5rem;
   border-radius: 0.6rem;
+  box-shadow: 1px 1px 2px 2px rgba(22, 22, 22, 0.822);
   padding: 10px;
 }
 .icon-text h2 {
   position: absolute;
   margin-left: 0.5rem;
   display: inline;
-  color: #fff;
+  color: var(--lightGrey);
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .social-card p {
@@ -108,27 +142,48 @@ body {
 .youtube {
   background-color: #433f4e;
 }
+.youtube:hover {
+  background-color: #433f4ed2;
+}
 .github {
   position: absolute;
   top: 6rem;
   background-color: #563040;
+}
+.github:hover {
+  background-color: #563040cc;
 }
 .handle {
   position: absolute;
   top: 12rem;
   background-color: #241920;
 }
+.handle:hover {
+  background-color: #241920ce;
+}
 
 .handle button {
   width: 4.7rem;
   height: 1.5rem;
   margin-top: 0.3rem;
+  border: 0.1rem solid #e5e5e560;
+  border-radius: 2px;
+  background-color: #e5e5e560;
+  color: #fff;
+}
+.handle a {
+  text-decoration: none;
+  color: #fff;
 }
 .news-letter {
   position: absolute;
   top: 18rem;
   background-color: #241920;
   height: 6rem;
+}
+
+.news-letter:hover {
+  background-color: #241920b6;
 }
 
 .news-letter input[type='email' i] {
@@ -142,5 +197,75 @@ body {
 .news-letter button {
   width: 4.3rem;
   height: 1.5rem;
+  border: 0.1rem solid #e5e5e560;
+  border-radius: 2px;
+  background-color: #e5e5e560;
+  color: #fff;
 }
 /* banner end */
+
+/* Experience style */
+.experience-box {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+  justify-content: flex-end;
+}
+.experience {
+  background-color: #3f3f95;
+  width: 10rem;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin: 1.5rem 0 0 0;
+}
+.ex-duraton {
+  font-size: 3rem;
+}
+.default h3,
+p {
+  padding: 0.2rem 0;
+}
+.default {
+  box-sizing: border-box;
+  background-color: var(--lightGrey);
+  color: #2e2c2c;
+  width: 14rem;
+  /* border: #5e5e5e 0.1rem solid; */
+}
+.default img {
+  padding-bottom: 0.5rem;
+  width: 2.5rem;
+}
+.skills-experience {
+  width: 20rem;
+}
+.big-title {
+  font-size: 5rem;
+  margin-bottom: 0.7rem;
+  margin-top: 5rem;
+}
+#ex-desc {
+  width: 25rem;
+  line-height: 1.5rem;
+}
+
+.skills {
+  width: 40%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto auto;
+}
+
+#skills-title {
+  margin: 3rem 0;
+}
+.skill-box h3 {
+  text-align: left;
+}
+.skill-icon img {
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 60%;
+  height: 80px;
+  width: 80px;
+}

@@ -236,19 +236,35 @@ p {
   padding-bottom: 0.5rem;
   width: 2.5rem;
 }
+/* skills and exeperience intro big title and text */
 .skills-experience {
-  width: 20rem;
+  display: flex;
+  gap: 8rem;
+  margin-top: 5rem;
 }
 .big-title {
   font-size: 5rem;
   margin-bottom: 0.7rem;
-  margin-top: 5rem;
+  width: 20rem;
 }
 #ex-desc {
   width: 25rem;
   line-height: 1.5rem;
 }
-
+/* working experience style */
+.working-experience-box {
+  flex: 2;
+}
+.working-experience {
+  display: flex;
+  border-bottom: 00.1rem black solid;
+  padding: 2rem 0;
+  width: 80%;
+}
+.job-position {
+  margin-left: 2rem;
+}
+/* skill and tool styles */
 .skills {
   width: 40%;
   display: grid;
@@ -256,7 +272,7 @@ p {
   grid-template-columns: auto auto auto;
 }
 
-#skills-title {
+.skills-title {
   margin: 3rem 0;
 }
 .skill-box h3 {

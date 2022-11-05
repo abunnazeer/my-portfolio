@@ -93,6 +93,9 @@ body {
 }
 .lets-talk:hover {
   background-color: var(--puppleLight);
+  transition: all 0.3s linear;
+
+  transition: 0.9s ease;
 }
 /* header end */
 
@@ -131,6 +134,8 @@ body {
 .project {
   background-color: #000;
   color: #fff;
+  border-color: transparent;
+  cursor: pointer;
 }
 /* social card */
 .social-card {

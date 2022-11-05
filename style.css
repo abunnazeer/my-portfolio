@@ -300,6 +300,100 @@ p {
 /* Project styles */
 .latest-projects {
   background-color: #00a85a;
-  padding-top: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+.latest-projects h1 {
+  color: #fff;
+  text-align: left;
+}
+
+.project-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto auto;
+}
+.project-box {
+  position: relative;
+  padding: 1rem;
+  background-color: var(--lightGrey);
+  border-radius: 1rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #464646;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s ease;
+  border-radius: 0 0 1rem 1rem;
+  opacity: 0.1;
+}
+.project-box:hover .overlay {
+  height: 20%;
+  opacity: 0.9;
+}
+.project-box img {
+  width: 100%;
+  z-index: -1;
+}
+
+.project-title {
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.view-more {
+  background-color: #000;
+  padding: 1.1rem 2.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.view-more:hover {
+  background-color: #383838;
+}
+
+/* Testimonial style */
+.testimonial {
+  background-color: #3f3f95;
   height: 600px;
+}
+
+.testimo-header {
+  padding: 3rem 0;
+}
+.testimo-header p {
+  margin-top: 1rem;
+  width: 30%;
+}
+
+.testimo-body {
+  background-color: #fff;
+  padding: 1rem;
+  width: 30%;
+}
+.testimo-body p {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.user {
+  display: flex;
+  justify-content: center;
+}
+.user-icon {
+  text-align: center;
+  font-size: 2rem;
+  background-color: gray;
+  border-radius: 60%;
+  height: 50px;
+  width: 50px;
+  padding: 0.4rem 0 0 0;
+}
+.user-name {
+  margin-left: 1rem;
 }

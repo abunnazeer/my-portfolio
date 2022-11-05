@@ -22,13 +22,33 @@
   font-family: myFont;
   src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
+
 body {
   font-family: sans-serif;
 }
 
+/* global styles */
 .main-container {
   width: 80%;
   margin: auto;
+}
+
+.custom-btn {
+  background-color: #000;
+  padding: 1.1rem 2.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.custom-btn:hover {
+  background-color: #383838;
+}
+.custom-btn-white {
+  background-color: #fff;
+  color: #000;
+}
+.custom-btn-white {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
 }
 /* header section start*/
 .header-container {
@@ -66,11 +86,8 @@ body {
 }
 .lets-talk {
   background-color: var(--pupple);
-  border-radius: 0.5rem;
   margin: auto 0;
-  width: 8rem;
-  height: 2.5rem;
-  border: 0px;
+  border-radius: 1rem;
   color: var(--white);
   font-weight: bold;
 }
@@ -193,6 +210,12 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 0.1rem solid #e5e5e54d;
+}
+.news-letter input:focus {
+  outline: none;
+}
+.news-letter input::placeholder {
+  color: #e5e5e5;
 }
 .news-letter button {
   width: 4.3rem;
@@ -348,31 +371,86 @@ p {
   color: #fff;
 }
 
-.view-more {
-  background-color: #000;
-  padding: 1.1rem 2.5rem;
-  text-decoration: none;
-  color: #fff;
+/* clients section */
+.clients-section {
+  padding: 6rem;
+  display: flex;
+
+  background-color: #fff;
 }
-.view-more:hover {
-  background-color: #383838;
+.clients-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  gap: 1rem;
+  margin-right: 4rem;
+}
+.client-box img {
+  width: 200px;
+  height: 100px;
+  box-shadow: #c9c7c7 0px 4px 10px 2px;
+  padding: 10px;
 }
 
+.client-text p {
+  width: 300px;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
 /* Testimonial style */
 .testimonial {
-  background-color: #3f3f95;
+  background-color: var(--lightGrey);
   height: 600px;
 }
 
 .testimo-header {
+  position: relative;
   padding: 3rem 0;
+}
+.testimo-nav-control {
+  position: absolute;
+  right: 7rem;
+}
+.previous,
+.next {
+  background-color: #fff;
+  padding: 0px 2px 10px 2px;
+  border-radius: 60%;
+  border: gray 1px solid;
+  font-size: 2rem;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: #3f3f95;
+  color: #fff;
+}
+.previous {
+  margin-right: 10px;
 }
 .testimo-header p {
   margin-top: 1rem;
   width: 30%;
 }
+.hr-line {
+  color: red;
+  font-size: 2rem;
+  display: inline;
+}
+.hr-line hr {
+  position: relative;
+  bottom: 26px;
+  width: 91%;
+  left: 30px;
+  border: 1px solid red;
+}
 
+.testimo-body-container {
+  display: flex;
+  gap: 1rem;
+}
 .testimo-body {
+  position: relative;
   background-color: #fff;
   padding: 1rem;
   width: 30%;
@@ -380,12 +458,13 @@ p {
 .testimo-body p {
   line-height: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
-.user {
+.client {
   display: flex;
   justify-content: center;
 }
-.user-icon {
+.client-icon {
   text-align: center;
   font-size: 2rem;
   background-color: gray;
@@ -394,6 +473,51 @@ p {
   width: 50px;
   padding: 0.4rem 0 0 0;
 }
-.user-name {
+.client-name {
   margin-left: 1rem;
+}
+
+/* contact me section */
+.contact-me {
+  background-color: #3f3f95;
+  padding: 5rem;
+}
+.contact-title {
+  color: #fff;
+  font-size: 3rem;
+  width: 38%;
+  margin-bottom: 1.5rem;
+}
+.form-setting input,
+textarea {
+  background-color: transparent;
+  color: #fff;
+  width: 30.2rem;
+  border: unset;
+  border-bottom: 0.15rem #fff solid;
+}
+.contact-style input[type='text' i] {
+  height: 2.5rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+.contact-style input,
+textarea:focus {
+  outline: none;
+}
+
+.contact-style textarea {
+  padding: 1rem 0 0 1rem;
+}
+
+.contact-style input::placeholder,
+textarea::placeholder {
+  color: #fff;
+}
+/* footer  section */
+.footer {
+  background-color: #000;
+  padding: 1rem 0;
+  color: #fff;
+  text-align: center;
 }

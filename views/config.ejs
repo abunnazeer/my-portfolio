@@ -1,0 +1,37 @@
+<!-- header  start-->
+
+<%- include('header') -%>
+<h1><%= config%></h1>
+<!-- header  start-->
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="logo__form">
+  <form action="/config" method="post" enctype="multipart/form-data">
+    <label for="logo">logo</label>
+    <input type="file" name="logoimg" id="" />
+    <button type="submit">Save</button>
+  </form>
+</div>
+
+<div class="menu__form">
+  <form action="/config" method="post">
+    <input type="text" name="menu" placeholder="menu" />
+    <button type="submit">Save</button>
+  </form>
+</div>
+<div class="special__menu">
+  <form action="/config" method="post">
+    <input type="text" name="menuspecial" placeholder="Special menu" />
+    <button type="submit">Save</button>
+  </form>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<%- include('footer') -%>

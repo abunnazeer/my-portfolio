@@ -13,14 +13,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 /////setting routes/////
-app.use('/config', settingsRoute);
+app.use('/', settingsRoute);
 
 app.get('/', (reg, res) => {
-  res.render('index', { title: 'Hey', message: 'Hello there!' });
+  res.render('index', { logo: settingsRoute, spmenu: settingsRoute });
 });
 
-app.post('/config', (reg, res) => {
-  const logox = reg.body.logoimg;
-  console.log(logox);
-});
 module.exports = app;
